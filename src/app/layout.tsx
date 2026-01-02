@@ -17,8 +17,8 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-    title: 'LuxuriaPure Cleaning | Premium Residential Services',
-    description: 'The premier cleaning service for discerning homeowners in Alexandria, Arlington, and DC. Consistent, professional, and discreet.',
+    title: 'LuxuriaPure Cleaning | Residential Cleaning Services',
+    description: 'Professional residential cleaning services in Alexandria, Arlington, and NW Washington DC. Reliable, well-structured service with clear expectations.',
 }
 
 export default function RootLayout({
