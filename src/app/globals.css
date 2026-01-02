@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  body {
+    @apply bg-white text-charcoal font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif text-navy font-bold;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-24;
+  }
+
+  .container-width {
+    @apply max-w-[1200px] mx-auto px-6;
+  }
+}
