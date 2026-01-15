@@ -7,7 +7,7 @@ export default function Footer() {
 
                 {/* Brand */}
                 <div>
-                    <h3 className="font-serif text-2xl mb-4">LuxuriaPure</h3>
+                    <h3 className="font-serif text-2xl mb-4">Luxuria Pure</h3>
                     <p className="text-gray-300 text-sm leading-relaxed">
                         Professional residential cleaning for Alexandria, Arlington, and DC. Fully insured and reliable.
                     </p>
@@ -29,7 +29,7 @@ export default function Footer() {
                     <h4 className="text-gold uppercase tracking-widest text-xs font-semibold mb-6">Contact</h4>
                     <ul className="space-y-3 text-sm text-gray-300">
                         <li>Alexandria, VA</li>
-                        <li><a href="mailto:info@luxuryapure.com" className="hover:text-white">info@luxuryapure.com</a></li>
+                        <li><a href="mailto:info@luxuryapure.com" className="hover:text-white">info@luxuriapure.com</a></li>
                         <li><a href="tel:+14435357785" className="hover:text-white">+1 (443) 535-7785</a></li>
                     </ul>
                 </div>
