@@ -6,9 +6,11 @@ interface ButtonProps {
     variant?: 'primary' | 'secondary' | 'outline'
     className?: string
     type?: 'button' | 'submit'
+    disabled?: boolean
+    onClick?: () => void
 }
 
-export default function Button({ href, children, variant = 'primary', className = '', type = 'button' }: ButtonProps) {
+export default function Button({ href, children, variant = 'primary', className = '', type = 'button', disabled = false, onClick }: ButtonProps) {
     const baseStyles = "inline-block px-8 py-3 uppercase tracking-wider text-sm font-semibold transition-all duration-300"
 
     const variants = {
@@ -17,7 +19,9 @@ export default function Button({ href, children, variant = 'primary', className 
         outline: "bg-transparent border border-navy text-navy hover:bg-navy hover:text-white"
     }
 
-    const combinedClasses = `${baseStyles} ${variants[variant]} ${className}`
+    const disabledStyles = disabled ? "opacity-50 cursor-not-allowed pointer-events-none" : ""
+
+    const combinedClasses = `${baseStyles} ${variants[variant]} ${disabledStyles} ${className}`
 
     if (href) {
         return (
@@ -28,7 +32,7 @@ export default function Button({ href, children, variant = 'primary', className 
     }
 
     return (
-        <button type={type} className={combinedClasses}>
+        <button type={type} className={combinedClasses} disabled={disabled} onClick={onClick}>
             {children}
         </button>
     )
